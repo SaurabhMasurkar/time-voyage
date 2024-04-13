@@ -1,0 +1,22 @@
+.event-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content {
+    padding: 20px;
+    /* text-align: center; */
+}
+
+.content img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.content iframe {
+    width: 100%;
+    height: 315px;
+    margin-top: 20px;
+}

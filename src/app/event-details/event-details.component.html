@@ -1,0 +1,25 @@
+<mat-dialog-actions align="end">
+    <button class="btn" mat-button mat-dialog-close>
+        <mat-icon class="close-icon" color="warn">close</mat-icon>
+    </button>
+</mat-dialog-actions>
+
+<mat-dialog-content class="mat-typography">
+    <div class="event-details p-3">
+        <div class="content">
+            <h2 class="text-center">{{selectedEvent.title}}</h2>
+            <p><strong>Date:</strong> {{selectedEvent.date}}</p>
+            <p>{{selectedEvent.description}}</p>
+
+            <div class="text-center">
+                <img [src]="selectedEvent.image" alt="{{selectedEvent.title}}">
+            </div>
+
+            <div class="text-center">
+                <iframe width="560" height="315" [src]="getSafeUrl(selectedEvent.video)" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</mat-dialog-content>

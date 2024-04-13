@@ -1,0 +1,21 @@
+/* Add this CSS to your styles.css or timeline.component.css */
+
+.timeline-container {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.timeline {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.events {
+  display: flex;
+}
+
+.event {
+  flex: 0 0 auto;
+  margin: 25px;
+  cursor: pointer;
+}
